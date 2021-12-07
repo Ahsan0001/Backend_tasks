@@ -21,6 +21,20 @@ class Graph:
                 degree += 1
         return degree
 
+    def is_path(self, path):  # path is a list of vertices
+        for i in range(len(path) - 1):
+            if self.Matrix[path[i]][path[i + 1]] == 0:
+                return False
+        return True
+
+    def print_as_grid(graph, n): #print Graph as grid n = row size and column size
+        for i in range(n):
+            for j in range(n):
+                print(graph.Matrix[i][j], end=" ")
+            print("\n")
+
+
+
 
 empty_graph = [[0, 0, 0, 0],
                [0, 0, 0, 0],
