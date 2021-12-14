@@ -14,6 +14,7 @@ def degree(graph, vertex):
             degree= degree+1
     print("degree is: ")
     print (degree)
+    print("HELLO WORLD")
 
 
 empty_graph = [[0,0,0,0],
@@ -42,3 +43,4 @@ degree(empty_graph, 0)
 degree(simple_graph, 1)
 degree(grid_3_3, 0)
 degree(grid_3_3, 1)
+print("adasdadasda")
